@@ -16,14 +16,13 @@
   height: 13px;
 }
 
-.hr-xd hr{
-  
- border-color: black;      /*!       ARREGLAR ESTO*/
-}
 
 .imagen-principal{
   height: 384px !important;
 }
+
+
+
 
 
 
@@ -64,4 +63,9 @@
 
   .titulo{
     height: 201px;
+  }
+
+  .fondo-rojo{
+    background-color: #DC3545;
+    height: 534px;
   }

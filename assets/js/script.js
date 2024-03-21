@@ -1,14 +1,22 @@
 $(document).ready(function(){
-    $("a").on('click', function(event) {
-    if (this.hash !== "") {
-    event.preventDefault();
-    var hash = this.hash;
-    $('html, body').animate({
-    scrollTop: $(hash).offset().top
-    }, 900, function(){
-   
-    window.location.hash = hash;
+    $("#enviarCorreo").click(function(){
+        alert("El correo fue enviado correctamente...");
     });
-    }
+});
+$(document).ready(function(){
+    $("h3").on("dblclick", function(){
+        $(this).css("color", "red");
     });
-   });
+});
+
+
+
+$(document).ready(function(){
+    $(".card-title a").click(function(e){
+        e.preventDefault(); 
+        
+        $(this).closest(".card").find(".card-text").toggle();
+    });
+});
+
+
